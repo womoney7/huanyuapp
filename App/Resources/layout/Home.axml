@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/headimagecontr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/messagecontr"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#F08400"
+        android:layout_marginBottom="2dip">
+        <TextView
+            android:text="@string/messagetext"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="@dimen/connect_info_camera_text_size"
+            android:textColor="@color/result_text" />
+        <TextView
+            android:text="最新消息新1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/textView2"
+            android:textColor="@color/result_text"
+            android:textSize="@dimen/connect_info_camera_text_size"
+            android:layout_weight="3" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/line_heng"
+            android:background="#ffffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1.0">
+                <Button
+                    android:id="@+id/cheliangpinggu"
+                    android:background="@drawable/btnxiadan_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/cheliangpinggu"
+                    android:layout_weight="1.0"
+                    style="@style/menu_style" />
+                <Button
+                    android:id="@+id/qichedaikuan"
+                    android:background="@drawable/btnchaxun"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/hengzhengpinggu"
+                    android:layout_weight="1.0"
+                    style="@style/menu_style" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1.0">
+                <Button
+                    android:id="@+id/hengzhengpinggu"
+                    android:background="@drawable/btndingdan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/qichedaikuan"
+                    android:layout_weight="1.0"
+                    style="@style/menu_style" />
+                <Button
+                    android:id="@+id/jixiaochaxun"
+                    android:background="@drawable/btnjilu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/jixiaochaxun"
+                    android:layout_weight="1.0"
+                    style="@style/menu_style" />
+            </LinearLayout>
+        <!--<LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1.0">
+                <Button
+                    android:id="@id/shezhi"
+                    android:background="@drawable/btnshezhi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/gongjus"
+                    android:layout_weight="1.0"
+                    style="@style/menu_style" />
+                <Button
+                    android:id="@id/gongju"
+                    android:background="@drawable/btngongju"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/gongju"
+                    android:layout_weight="1.0"
+                    style="@style/menu_style" />
+            </LinearLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+﻿<Properties StartupItem="App/App.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.0123456789ABCDEF" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="App/LoginActivity.cs">
+    <Files>
+      <File FileName="App/Entity/CustomDataPackage.cs" Line="1" Column="1" />
+      <File FileName="App/Assets/AboutAssets.txt" Line="1" Column="1" />
+      <File FileName="App/MapActivity.cs" Line="1" Column="1" />
+      <File FileName="App/LunchActivity.cs" Line="26" Column="21" />
+      <File FileName="App/LoginActivity.cs" Line="24" Column="10" />
+      <File FileName="fastBinaryJSON/BJsonSerializer.cs" Line="1" Column="1" />
+      <File FileName="App/MainActivity.cs" Line="11" Column="28" />
+      <File FileName="App/App.csproj" Line="9" Column="54" />
+      <File FileName="App/Properties/AndroidManifest.xml" Line="14" Column="64" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/工作/workspace/App/App/MapActivity.cs" line="28" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

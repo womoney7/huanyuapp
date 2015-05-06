@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="menu_style2">
+    <item name="android:textSize">@dimen/myems_text_size</item>
+    <item name="android:textColor">@drawable/btn2colorstyte_s</item>
+    <item name="android:gravity">left|center</item>
+    <item name="android:paddingLeft">@dimen/myems_left</item>
+    <item name="android:singleLine">true</item>
+  </style>
+  <style name="menu_style">
+    <item name="android:textSize">@dimen/myems_text_size</item>
+    <item name="android:textColor">@drawable/btn2colorstyte</item>
+    <item name="android:gravity">bottom|right|center</item>
+    <item name="android:paddingRight">@dimen/myems_right</item>
+    <item name="android:paddingBottom">@dimen/myems_bottom</item>
+    <item name="android:singleLine">true</item>
+  </style>
+  <style name="main_tab_bottom2">
+    <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+    <item name="android:textColor">#ffffffff</item>
+    <item name="android:gravity">bottom|center</item>
+    <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+    <item name="android:paddingBottom">@dimen/bottom_tab_padding_bottom</item>
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">@dimen/bottom_tab_h</item>
+    <item name="android:button">@null</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:drawablePadding">2.0dip</item>
+    <item name="android:layout_weight">1.0</item>
+  </style>
+  <style name="CustomWindowTitleBackground">
+    <item name="android:background">#ff565656</item>
+  </style>
+  <!--<style name="app" parent="@android:style/Theme">
+    <item name="android:windowTitleSize">50.0dip</item>
+    <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+  </style>-->
+  <style name="onekeyorderfont" parent="@android:style/Theme">
+    <item name="android:textSize">16.0sp</item>
+    <item name="android:textColor">#ff006699</item>
+  </style>
+
+  <!-- 将自定义的style取名为CustomTheme，父类为Theme.Holo.Light，也就是说默认背景是白底黑字（如果是Theme.Holo，则默认是黑底白字） -->
+  <style name="app" parent="android:style/Theme.Holo.Light">
+    <item name="android:actionBarStyle">@style/AppActionBar</item>
+    <!-- 这是item的背景修改，不按时透明，按时显示  -->
+    <item name="android:selectableItemBackground">@drawable/ad_selectable_background</item>
+    <item name="android:actionBarTabStyle">@style/MyActionBarTabStyle</item>
+  </style>
+
+  <style name="AppActionBar" parent="android:style/Widget.Holo.Light.ActionBar">
+    <item name="android:background">#1A60A6</item>
+  </style>
+
+  <!-- Tab选项标签的样式 -->
+  <style name="MyActionBarTabStyle" parent="android:style/Widget.Holo.Light.ActionBar.TabView">
+    <!--<item name="android:background">@drawable/actionbar_tab_bg</item>-->
+    <item name="android:paddingLeft">22dp</item>
+    <item name="android:paddingRight">22dp</item>
+  </style>
+
+  <style name="pingguoxixin_tab">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:gravity">bottom|center</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:paddingTop">8dip</item>
+    <item name="android:paddingBottom">4dip</item>
+    <item name="android:textColor">@drawable/pingguoxixin_item_selector</item>
+    <item name="android:button">@null</item>
+  </style>
+
+</resources>

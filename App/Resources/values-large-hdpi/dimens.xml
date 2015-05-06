@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zhuce_text_h">75.0dip</dimen>
+    <dimen name="txt_size_zhuce">22.0dip</dimen>
+    <dimen name="gongju_line_h">70.0dip</dimen>
+    <dimen name="gongju_text_h">50.0dip</dimen>
+    <dimen name="gongju_text_size">22.0dip</dimen>
+    <dimen name="gereziliao_text_h">70.0dip</dimen>
+    <dimen name="gereziliao_text_size">18.0dip</dimen>
+    <dimen name="setting_h">70.0dip</dimen>
+    <dimen name="myems_text_size">24.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">3.0dip</dimen>
+    <dimen name="pad">20.0dip</dimen>
+    <dimen name="btn_top">20.0dip</dimen>
+    <dimen name="img_w1">33.0dip</dimen>
+    <dimen name="img_h1">45.0dip</dimen>
+    <dimen name="img_w2">55.0dip</dimen>
+    <dimen name="img_h2">33.0dip</dimen>
+    <dimen name="img_line_w">50.0dip</dimen>
+    <dimen name="dengl_w">250.0dip</dimen>
+    <dimen name="txt_size">28.0dip</dimen>
+    <dimen name="pad_left">80.0dip</dimen>
+    <dimen name="zhuye2_btn_h">390.0dip</dimen>
+    <dimen name="zhuye_btn_h">130.0dip</dimen>
+    <dimen name="bottom_tab_h">78.0dip</dimen>
+    <dimen name="bottom_tab_font_size">18.0dip</dimen>
+    <dimen name="bottom_tab_padding_bottom">1.0dip</dimen>
+    <dimen name="regist_getchecknum_btn_ml">8.0dip</dimen>
+    <dimen name="regist_getchecknum_btn_h">58.0dip</dimen>
+</resources>

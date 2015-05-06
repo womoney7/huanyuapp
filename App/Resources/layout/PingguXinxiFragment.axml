@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/pingguoxixin_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <RadioGroup
+        android:id="@+id/pingguoxixin_tab"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <RadioButton
+            style="@style/pingguoxixin_tab"
+            android:checked="true"
+            android:id="@+id/wgjcRdbtn"
+            android:text="外观" />
+        <RadioButton
+            style="@style/pingguoxixin_tab"
+            android:id="@+id/cjjcRdbtn"
+            android:text="车架" />
+        <RadioButton
+            style="@style/pingguoxixin_tab"
+            android:id="@+id/nsjcRdbtn"
+            android:text="内饰" />
+        <RadioButton
+            style="@style/pingguoxixin_tab"
+            android:id="@+id/ckjcRdbtn"
+            android:text="车况" />
+        <RadioButton
+            style="@style/pingguoxixin_tab"
+            android:id="@+id/fjzlRdbtn"
+            android:text="附件" />
+    </RadioGroup>
+</LinearLayout>

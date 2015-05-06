@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="myems_text_size">26.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">3.0dip</dimen>
+    <dimen name="img_w1">33.0dip</dimen>
+    <dimen name="img_h1">45.0dip</dimen>
+    <dimen name="img_w2">55.0dip</dimen>
+    <dimen name="img_h2">29.0dip</dimen>
+    <dimen name="zhuye2_btn_h">450.0dip</dimen>
+    <dimen name="zhuye_btn_h">150.0dip</dimen>
+    <dimen name="bottom_tab_h">68.0dip</dimen>
+    <dimen name="bottom_tab_font_size">16.0dip</dimen>
+    <dimen name="bottom_tab_padding_bottom">1.0dip</dimen>
+</resources>

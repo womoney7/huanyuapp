@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zhuce_text_h">65.0dip</dimen>
+    <dimen name="txt_size_zhuce">20.0dip</dimen>
+    <dimen name="myems_text_size">16.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">3.0dip</dimen>
+    <dimen name="img_w1">24.0dip</dimen>
+    <dimen name="img_h1">33.0dip</dimen>
+    <dimen name="img_w2">40.0dip</dimen>
+    <dimen name="img_h2">22.0dip</dimen>
+    <dimen name="txt_size">17.0dip</dimen>
+    <dimen name="one_key_order_lin_h">55.0dip</dimen>
+    <dimen name="one_key_order_lin_text_w">100.0dip</dimen>
+    <dimen name="one_key_order_lin_text_w2">260.0dip</dimen>
+    <dimen name="one_key_order_lin_margin_t">1.0dip</dimen>
+    <dimen name="one_key_order_lin_margin_t2">5.0dip</dimen>
+    <dimen name="one_key_order_btn_margin_b">20.0dip</dimen>
+    <dimen name="one_key_order_text_margin_l">20.0dip</dimen>
+    <dimen name="one_key_order_text_margin_l2">5.0dip</dimen>
+    <dimen name="one_key_order_text_size">16.0dip</dimen>
+    <dimen name="one_key_order_top_text_size">12.0dip</dimen>
+    <dimen name="one_key_order_btn_h">42.0dip</dimen>
+    <dimen name="one_key_order_btn_lr">10.0dip</dimen>
+    <dimen name="zhuye2_btn_h">270.0dip</dimen>
+    <dimen name="zhuye_btn_h">90.0dip</dimen>
+    <dimen name="bottom_tab_h">58.0dip</dimen>
+    <dimen name="bottom_tab_font_size">14.0dip</dimen>
+    <dimen name="bottom_tab_padding_bottom">3.0dip</dimen>
+    <dimen name="regist_getchecknum_btn_ml">8.0dip</dimen>
+    <dimen name="regist_getchecknum_btn_h">50.0dip</dimen>
+</resources>

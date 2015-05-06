@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffdcdddd"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="8.0" />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+            <Button
+                android:textSize="@dimen/setting_text_size"
+                android:textColor="@drawable/btn2colorstyte"
+                android:id="@+id/setting_but1"
+                android:background="@drawable/btn2styte"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_h"
+                android:layout_marginTop="@dimen/setting_top"
+                android:text="@string/my_data" />
+        <!--<Button
+                android:textSize="@dimen/setting_text_size"
+                android:textColor="@drawable/btn2colorstyte"
+                android:id="@id/setting_but2"
+                android:background="@drawable/btn2styte"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_h"
+                android:layout_marginTop="@dimen/setting_top"
+                android:text="@string/password" />
+            <Button
+                android:textSize="@dimen/setting_text_size"
+                android:textColor="@drawable/btn2colorstyte"
+                android:id="@id/setting_but3"
+                android:background="@drawable/btn2styte"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_h"
+                android:layout_marginTop="@dimen/setting_top"
+                android:text="@string/welcome" />-->
+            <Button
+                android:textSize="@dimen/setting_text_size"
+                android:textColor="@drawable/btn2colorstyte"
+                android:id="@+id/setting_but4"
+                android:background="@drawable/btn2styte"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_h"
+                android:layout_marginTop="@dimen/setting_top"
+                android:text="@string/logout" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8.0" />
+    </LinearLayout>
+</LinearLayout>

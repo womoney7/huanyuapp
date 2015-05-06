@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_picker_name">应用</string>
+  <string name="bookmark_picker_name">书签</string>
+  <string name="button_add_calendar">添加事件至日历</string>
+  <string name="button_add_contact">添加联系人</string>
+  <string name="button_back">返回</string>
+  <string name="submit_btn">提交</string>
+  <string name="button_book_search">打开图书搜索</string>
+  <string name="button_cancel">取消</string>
+  <string name="button_custom_product_search">自定义搜索</string>
+  <string name="button_dial">拨号</string>
+  <string name="button_done">完成</string>
+  <string name="button_email">发送email</string>
+  <string name="button_get_directions">获取地址</string>
+  <string name="button_google_shopper">Google 购物</string>
+  <string name="button_mms">发送彩信</string>
+  <string name="button_ok">确定</string>
+  <string name="button_open_browser">打开浏览器</string>
+  <string name="button_product_search">打开产品搜索</string>
+  <string name="button_search_book_contents">搜索图书内容</string>
+  <string name="button_share_app">共享应用</string>
+  <string name="button_share_bookmark">分享书签</string>
+  <string name="button_share_by_email">通过email分享</string>
+  <string name="button_share_by_sms">通过短信分享</string>
+  <string name="button_share_clipboard">分享剪切板</string>
+  <string name="button_share_contact">分享联系人</string>
+  <string name="button_show_map">显示地图</string>
+  <string name="button_sms">发送短信</string>
+  <string name="button_web_search">网页搜索</string>
+  <string name="button_wifi">连接到网络</string>
+  <string name="contents_contact">联系人信息</string>
+  <string name="contents_email">Email地址</string>
+  <string name="contents_location">地理坐标</string>
+  <string name="contents_phone">电话号码</string>
+  <string name="contents_sms">短信地址</string>
+  <string name="contents_text">纯文本</string>
+  <string name="history_clear_one_history_text">删除</string>
+  <string name="history_clear_text">删除历史</string>
+  <string name="history_email_title">条码扫描器历史</string>
+  <string name="history_empty">空的</string>
+  <string name="history_empty_detail">没有条码扫描已记录</string>
+  <string name="history_send">发送历史</string>
+  <string name="history_title">历史</string>
+  <string name="menu_encode_mecard">使用MECARD</string>
+  <string name="menu_encode_vcard">使用vCard</string>
+  <string name="menu_help">帮助</string>
+  <string name="menu_history">历史</string>
+  <string name="menu_share">分享</string>
+  <string name="msg_bulk_mode_scanned">批量扫描：找到条码，已保存</string>
+  <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+  <string name="msg_default_format">格式</string>
+  <string name="msg_default_meta">元数据</string>
+  <string name="msg_default_mms_subject">Hi</string>
+  <string name="msg_default_status">请将条码置于取景框内扫描。</string>
+  <string name="msg_default_time">时间</string>
+  <string name="msg_default_type">类型</string>
+  <string name="msg_encode_contents_failed">无法根据已有数据生成条码。</string>
+  <string name="msg_google_books">谷歌图书</string>
+  <string name="msg_google_product">谷歌购物</string>
+  <string name="msg_google_shopper_missing">Google 购物未安装</string>
+  <string name="msg_install_google_shopper">Google 购物是一款将条码扫描和商品比价相结合的应用，谷歌购物不使用浏览器，您想尝试吗？</string>
+  <string name="msg_intent_failed">抱歉，无法打开所需软件。 条码内容可能无效。</string>
+  <string name="msg_redirect">重定向</string>
+  <string name="msg_sbc_book_not_searchable">抱歉，无法找到此图书。</string>
+  <string name="msg_sbc_failed">抱歉，搜索时遇到错误。</string>
+  <string name="msg_sbc_no_page_returned">无页面返回</string>
+  <string name="msg_sbc_page">页面</string>
+  <string name="msg_sbc_results">结果</string>
+  <string name="msg_sbc_searching_book">搜索图书…</string>
+  <string name="msg_sbc_snippet_unavailable">摘录不可用</string>
+  <string name="msg_sbc_unknown_page">未知页面</string>
+  <string name="msg_share_explanation">您可以通过在自己的手机上显示条码，并使用其它手机扫描此条码的方式进行分享</string>
+  <string name="msg_share_subject_line">这是我所扫描条码的内容</string>
+  <string name="msg_share_text">或键入一些文字</string>
+  <string name="msg_sure">你肯定吗？</string>
+  <string name="msg_unmount_usb">抱歉，SD卡不可访问。</string>
+  <string name="preferences_actions_title">找到条码时</string>
+  <string name="preferences_auto_focus_title">使用自动对焦</string>
+  <string name="preferences_bulk_mode_summary">连续扫描并保存多个条形码</string>
+  <string name="preferences_bulk_mode_title">批量扫描模式</string>
+  <string name="preferences_copy_to_clipboard_title">复制到剪切板</string>
+  <string name="preferences_custom_product_search_summary">替换：％s=内容，％f=格式，％t=类型</string>
+  <string name="preferences_custom_product_search_title">自定义搜索网址</string>
+  <string name="preferences_decode_1D_title">扫描 一维条码</string>
+  <string name="preferences_decode_Data_Matrix_title">扫描 DM码</string>
+  <string name="preferences_decode_QR_title">扫描 QR码</string>
+  <string name="preferences_device_bug_workarounds_title">设备问题解决办法</string>
+  <string name="preferences_disable_continuous_focus_summary">只使用标准对焦模式</string>
+  <string name="preferences_disable_continuous_focus_title">没有持续关注</string>
+  <string name="preferences_disable_exposure_title">无曝光</string>
+  <string name="preferences_front_light_auto">自动</string>
+  <string name="preferences_front_light_off">待用</string>
+  <string name="preferences_front_light_on">活跃</string>
+  <string name="preferences_front_light_summary">前灯可用时，打开前灯</string>
+  <string name="preferences_front_light_title">前灯</string>
+  <string name="preferences_general_title">一般设置</string>
+  <string name="preferences_invert_scan_summary">黑色背景上的白色条形码扫描。在某些设备上。</string>
+  <string name="preferences_invert_scan_title">反向扫描</string>
+  <string name="preferences_name">设置</string>
+  <string name="preferences_play_beep_title">提示音</string>
+  <string name="preferences_remember_duplicates_summary">在历史记录中保存重复记录</string>
+  <string name="preferences_remember_duplicates_title">记住重复</string>
+  <string name="preferences_result_title">结果设置</string>
+  <string name="preferences_scanning_title">条码类型选择</string>
+  <string name="preferences_search_country">搜索国家</string>
+  <string name="preferences_supplemental_summary">尝试检索关于条码内容的更多信息</string>
+  <string name="preferences_supplemental_title">检索更多信息</string>
+  <string name="preferences_try_bsplus">尝试条码扫描器+</string>
+  <string name="preferences_try_bsplus_summary">增强新的功能和接口</string>
+  <string name="preferences_vibrate_title">振动</string>
+  <string name="result_address_book">找到联系人信息</string>
+  <string name="result_calendar">找到日历事件</string>
+  <string name="result_email_address">找到email地址</string>
+  <string name="result_geo">找到地理坐标</string>
+  <string name="result_isbn">找到图书</string>
+  <string name="result_product">找到产品</string>
+  <string name="result_sms">找到短信地址</string>
+  <string name="result_tel">找到电话号码</string>
+  <string name="result_text">找到纯文本</string>
+  <string name="result_uri">找到URL</string>
+  <string name="result_wifi">发现网络配置</string>
+  <string name="sbc_name">Google图书搜索</string>
+  <string name="wifi_changing_network">请求连接到网络…</string>
+  <string name="wifi_ssid_label">网络SSID</string>
+  <string name="wifi_type_label">类型</string>
+  <string name="GPS_tishi">正在获取地址信息...</string>
+  <string name="pinglun">评论</string>
+  <string name="shifouzhuxiao">是否确认注销？</string>
+  <string name="log_off">注销</string>
+  <string name="loginName">用 户 名：</string>
+  <string name="loginHint">自动登录</string>
+  <string name="savePsswordHint">保存密码</string>
+  <string name="shifoutuichu">是否确认退出？</string>
+  <string name="app_name">EMS</string>
+  <string name="menu_out">退出</string>
+  <string name="menu_reset">重新加载</string>
+  <string name="title_activity_main">EMS</string>
+  <string name="onkeyOrder">一键下单</string>
+  <string name="menu_add">新增</string>
+  <string name="menu_update">修改</string>
+  <string name="menu_delete">删除</string>
+  <string name="send_pro">寄出省</string>
+  <string name="rec_pro">寄达省</string>
+  <string name="weight">重 量</string>
+  <string name="login_name">登录名:</string>
+  <string name="my_address">我的地址簿</string>
+  <string name="report">报表</string>
+  <string name="deliver">妥投</string>
+  <string name="deliver1">揽收</string>
+  <string name="deliver2">收寄</string>
+  <string name="no_deliver">未妥投</string>
+  <string name="dlvdownload">数据下载</string>
+  <string name="back">返回</string>
+  <string name="mail_detail">详细信息</string>
+  <string name="deliver_time">上传时间</string>
+  <string name="update_time">扫描时间</string>
+  <string name="mail_type">邮件类型</string>
+  <string name="submit">提交</string>
+  <string name="delete">删除</string>
+  <string name="scan">扫描</string>
+  <string name="add">增加</string>
+  <string name="confirm">确定</string>
+  <string name="cancel">取消</string>
+  <string name="photo">拍照</string>
+  <string name="loading">正在执行....</string>
+  <string name="hint">提示:</string>
+  <string name="report_form">大客户报表</string>
+  <string name="report_daily">日常报表</string>
+  <string name="order_form">订单查询</string>
+  <string name="address">我的地址薄</string>
+  <string name="notice">EMS公告</string>
+  <string name="fare">运费查询</string>
+  <string name="time">时限查询</string>
+  <string name="range_str">揽收范围</string>
+  <string name="range_GPS">GPS获取范围</string>
+  <string name="prohibited">禁寄物品</string>
+  <string name="forbidden_title1">特快专递（EMS）邮件禁止寄递的物品</string>
+  <string name="forbidden_title2">大陆禁止和限制寄往台湾的文件或物品</string>
+  <string name="forbidden_title3">邮政惯例禁止交寄</string>
+  <string name="forbidden_title4">台湾地区邮政规定禁止交寄</string>
+  <string name="forbidden_ems">
+    "1.国家法律法规禁止流通或者寄递的物品；
+    2.爆炸性、易燃性、腐蚀性、放射性和毒性等危险物品；
+    3.反动报刊、书籍、窗口或者淫秽物品；
+    4.各种货币；
+    5.妨害公共卫生的物品；
+    6.容易腐烂的物品；
+    7.活的动物（包装能确保寄递和工作人员安全的蜜蜂、蚕、水蛭除外）；
+    8.包装不妥，可能危害人身安全、污染或损毁其它邮件设备的物品；
+    9.其它不适合邮递条件的物品。"
+  </string>
+  <string name="forbidden1">
+    "1.物品的性质或其封装有伤害邮政服务人员或污损邮件或邮政设备嫌疑的。
+    2.封口用金属扣钮等有锋利边缘，可能妨害邮件处理的物品。
+    3.各类枪械、弹药、易爆炸性物品、易燃烧性物品、易腐蚀性物品、放射性元素及容器、烈性毒药、麻醉药物、生化制品和传染性物品。
+    4.各种危害社会安全和稳定的以及淫秽的出版物、宣传品、印刷品等。
+    5.各种妨害公共卫生的物品。
+    6.对方禁止进入或流通的文件或物品。
+    7.除上述的一般规定外，还应遵从海关部门的有关规定。"
+  </string>
+  <string name="forbidden2">
+    "1.物品的性质或其封装有伤害邮政服务人员或污损邮件或邮政设备嫌疑的。
+    2.封口用金属扣钮等有锋利边缘，可能妨害邮件处理的物品。
+    3.易燃、易爆裂或其它危险物品。但备案机构以特殊方法封装互寄的易坏生物学物料，经相关主管部门核发运输凭证的，不受此限制。
+    4.活生动物。但蜜蜂、蚕、水蛭、由备案机构互寄的寄生虫或为消除害虫的虫类不受此限制。
+    5.放射性物品。
+    6.鸦片、吗啡及其它麻醉物品。但经相关主管部门核发运输凭证或司法机关、司法警察机构备文证明，供诉讼证据用途的，并作保价或申报价值包裹互寄，或作保价包裹用于医药或科学研究，经寄达局准许的物品，不受此限制。
+    7.猥亵妨害风化的文件或物品。但由司法机关或司法警察机关书面证明为诉讼证据用途的，做挂号信函或包裹互寄，不受此限制。
+    8.寄达地禁止进入的文件或物品。
+    9.台湾地区有关主管部门禁止发售及制造的文件或物品。但由司法机关或司法警察机关书面证明为诉讼证据用途的，做挂号信函或包裹互寄，不受此限制。
+    10.彩票及与彩票有关的广告传单。但由司法机关或司法警察机关书面证明为诉讼证据用途的，做挂号信函或包裹互寄，不受此限制。
+    11.其它法令规定的违禁品。"
+  </string>
+  <string name="onekey_forbidden">
+    "1.为便于我们尽快上门揽收，请提供详细取件地址。
+    2.因各地揽收时间不同，如已超过当地揽收时间，您的邮件将在次日揽收。"
+  </string>
+  <string name="loginbtn">登  录</string>
+  <string name="zhucebtn">注册</string>
+  <string name="wangzimima">忘记密码</string>
+  <string name="mimakejian">密码可见</string>
+  <string name="cheliangpinggu">汽车收购</string>
+  <string name="hengzhengpinggu">衡证评估</string>
+  <string name="qichedaikuan">汽车贷款</string>
+  <string name="jixiaochaxun">统计分析</string>
+  <string name="menu_settings">设        置</string>
+  <string name="gongjus">工        具</string>
+  <string name="gongju">禁寄物品</string>
+  <string name="loginNameHint">账号</string>
+  <string name="registHint">手机号</string>
+  <string name="passwordHint">请输入密码</string>
+  <string name="youjianchaxun_Hint1">点 击 此 处</string>
+  <string name="youjianchaxun_Hint2">扫描邮件号码</string>
+  <string name="youjianchaxun_Hint3">您可以连续扫描添加邮件号</string>
+  <string name="mail_no">邮件号</string>
+  <string name="mail_no_hint">请输入邮件号</string>
+  <string name="getcheckcode">获取验证码</string>
+  <string name="youjianchaxuntishi1">请输入或扫描有效的邮件号！</string>
+  <string name="youjianchaxuntishi2">一次最多添加十个邮件号！</string>
+  <string name="youjianchaxuntishi3">请不要添加空邮件号!</string>
+  <string name="mail_query_top">查询</string>
+  <string name="checkcodehint">请输入验证码</string>
+  <string name="sendcheckcodehint">您的验证码已发送成功!</string>
+  <string name="modifypasswordhint">请输入6–16位数字或字母</string>
+  <string name="newpasswordtext">新密码</string>
+  <string name="bianji">编辑</string>
+  <string name="wancheng">完成</string>
+  <string name="completedbtn">完成</string>
+  <string name="registresetbtn">重填</string>
+  <string name="shoujian">已收件</string>
+  <string name="yunsong">运送中</string>
+  <string name="yunjian">送件中</string>
+  <string name="qianshou">客户签收</string>
+  <string name="anpaituotou">安排投递</string>
+  <string name="main_home">首页</string>
+  <string name="main_my">工具</string>
+  <string name="menu_map">地图</string>
+  <string name="menu_xiaoxi">消息</string>
+  <string name="jichudisheng">寄出地省</string>
+  <string name="jidadisheng">寄达地省</string>
+  <string name="shi">市</string>
+  <string name="shixian">时        限</string>
+  <string name="jisuan">计       算</string>
+  <string name="jiage">价 格</string>
+  <string name="my_data">个人资料</string>
+  <string name="password">密码修改</string>
+  <string name="welcome">欢迎界面</string>
+  <string name="logout">注销</string>
+  <string name="exit">再按一次退出程序</string>
+  <string name="scan_hint">请输入或者扫描正确的13位邮件号</string>
+  <string name="same_mail_hint">您已输入过此邮件号</string>
+  <string name="same_hint">请不要输入或扫描相同邮件</string>
+  <string name="save">保       存</string>
+  <string name="old_pwassword">请输入原密码</string>
+  <string name="new_password">请输入新密码</string>
+  <string name="new_password_again">请再次输入新密码</string>
+  <string name="modify_password_tishi1">原密码长度必须在1到16之间</string>
+  <string name="modify_password_tishi2">新密码长度必须在1到16之间</string>
+  <string name="modify_password_tishi3">确认密码长度必须在1到16之间</string>
+  <string name="modify_password_tishi4">新密码与确认密码不一致</string>
+  <string name="modify_password_tishi5">密码修改成功！</string>
+  <string name="modify_password_tishi6">原密码错误！</string>
+  <string name="settings">设置</string>
+  <string name="gerenziliao">个人资料</string>
+  <string name="name">姓  名</string>
+  <string name="name_hint">请输入姓名</string>
+  <string name="mobile">手  机</string>
+  <string name="mobile_hint">请输入手机号码</string>
+  <string name="provice">省</string>
+  <string name="city">市</string>
+  <string name="contry">县</string>
+  <string name="street">街道地址</string>
+  <string name="street_hint">请输入街道地址</string>
+  <string name="gerenziliao_tishi1">正在获取数据…</string>
+  <string name="gerenziliao_tishi2">获取用户信息失败!</string>
+  <string name="gerenziliao_tishi3">用户信息修改成功</string>
+  <string name="gerenziliao_tishi4">用户信息修改失败</string>
+  <string name="gerenziliao_tishi5">请输入姓名</string>
+  <string name="login_tishi">您输入的用户名或密码有误！</string>
+  <string name="order_query_text1">下单时间：</string>
+  <string name="order_query_text2">邮  件  号：</string>
+  <string name="dizhibo">地址簿</string>
+  <string name="changpingzhonglei">产品种类</string>
+  <string name="tongxunlu">通讯录</string>
+  <string name="nicheng">昵  称</string>
+  <string name="yaoyiyao">摇一摇</string>
+  <string name="xingming">姓名：</string>
+  <string name="dianhua">电话：</string>
+  <string name="dizhi">地址：</string>
+  <string name="mobile_nicheng">请输入昵称</string>
+  <string name="order_query_text3">状        态：</string>
+  <string name="order_query_text">订单编号：</string>
+  <string name="onekeyordertoptitle">下单</string>
+  <string name="one_key_order_btn1">摇一摇</string>
+  <string name="one_key_order_btn2">地址簿</string>
+  <string name="clpg_clxx_no">NO</string>
+  <string name="clpg_clxx_jilushijian">记录时间</string>
+  <string name="clpg_clxx_chezhuxingming">车主姓名</string>
+  <string name="clpg_clxx_lianxidianhua">联系电话</string>
+  <string name="clpg_clxx_chepaihaoma">车牌号码</string>
+  <string name="clpg_clxx_cheliangpinpai">车辆品牌</string>
+  <string name="clpg_clxx_chexiangsuliang">车厢数量</string>
+  <string name="clpg_clxx_cheliangxinghao">车辆型号</string>
+  <string name="clpg_clxx_pailiang">排量</string>
+  <string name="clpg_clxx_chezuoshuliang">车座数量</string>
+  <string name="clpg_clxx_color">颜色</string>
+  <string name="clpg_clxx_paidang">排挡配置</string>
+  <string name="clpg_clxx_xingshilicheng">行驶里程</string>
+  <string name="clpg_clxx_tianchuang">是否天窗</string>
+  <string name="clpg_clxx_dengjiriqi">登记日期</string>
+  <string name="clpg_clxx_nianshenriqi">年审日期</string>
+  <string name="clpg_clxx_jiaoqiangxian">交强险</string>
+  <string name="clpg_clxx_baoxianriqi">到期日期</string>
+  <string name="clpg_clxx_shangyexian">商业险</string>
+  <string name="clpg_clxx_luqiaofei">路桥费</string>
+  <string name="clpg_clxx_luqiaoriqi">路桥到期日期</string>
+  <string name="clpg_clxx_anjie">是否按揭</string>
+  <string name="clpg_clxx_anjieriqi">按揭日期</string>
+  <string name="clpg_clxx_chejia">车架号码</string>
+  <string name="clpg_clxx_fadongjihao">发动机号</string>
+  <string name="clpg_clxx_jiazhuangmiaosu">加装描述</string>
+  <string name="clpg_clxx_weizhang">违章</string>
+  <string name="clpg_clxx_cheliangtupian">车辆图片</string>
+  <string name="clpg_pgxx_waiguanjiance">外观检测</string>
+  <string name="clpg_pgxx_chejiajiance">车架检测</string>
+  <string name="clpg_pgxx_neishijiance">内饰检测</string>
+  <string name="clpg_pgxx_chekuangjiance">车况检测</string>
+  <string name="clpg_pgxx_fujianziliao">附件资料</string>
+  <string name="clpg_xxgj_chelianglaiyuan">车辆来源</string>
+  <string name="clpg_xxgj_qiwangjia">客户期望价</string>
+  <string name="clpg_xxgj_chudingjiariqi">初定价日期</string>
+  <string name="clpg_xxgj_zhongdingjiariqi">最终价日期</string>
+  <string name="clpg_xxgj_chupingjiazhi">初评价值</string>
+  <string name="clpg_xxgj_zuizhongdingjia">最终定价</string>
+  <string name="clpg_xxgj_zhongjieren">中介人</string>
+  <string name="clpg_xxgj_zhongjieyongjin">中介佣金</string>
+  <string name="clpg_xxgj_shougourenyuan">收购人员</string>
+  <string name="clpg_xxgj_yewuyuan">业务员</string>
+  <string name="btnweizhang_txt">查询</string>
+  <string name="clpg_btn_text">提交</string>
+  <string name="messagetext">消息：</string>
+  <string name="product1">国内经济快递</string>
+  <string name="product2">国内特快专递</string>
+  <string name="gongjutishi1">请输入计费重量</string>
+  <string name="gongjutishi2">请选择寄出省份</string>
+  <string name="gongjutishi3">请选择寄出城市</string>
+  <string name="gongjutishi4">请选择寄达省份</string>
+  <string name="gongjutishi5">请选择寄达城市</string>
+  <string name="xiaoshi">小时</string>
+  <string name="tickergenzong">EMS</string>
+  <string name="save_address_tishi1">获取通讯录信息失败！</string>
+  <string name="logo_name">环宇汽车</string>
+  <string name="btn_take_photo_text">拍照</string>
+  <string name="btn_pick_photo_text">从相册选取</string>
+</resources>

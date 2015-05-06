@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zhuce_text_h">55.0dip</dimen>
+    <dimen name="txt_size_zhuce">17.0dip</dimen>
+    <dimen name="bottom_tab_h">57.0dip</dimen>
+    <dimen name="regist_getchecknum_btn_ml">8.0dip</dimen>
+    <dimen name="regist_getchecknum_btn_h">39.0dip</dimen>
+</resources>

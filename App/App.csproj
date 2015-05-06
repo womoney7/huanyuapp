@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08E09E6D-1475-4021-828C-A33E43807405}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>App</RootNamespace>
+    <AssemblyName>App</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <DevInstrumentationEnabled>True</DevInstrumentationEnabled>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
+    <MonoDroidExtraArgs>
+    </MonoDroidExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>Full</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <BundleAssemblies>True</BundleAssemblies>
+    <AndroidSupportedAbis>armeabi-v7a</AndroidSupportedAbis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="BaiduMap">
+      <HintPath>..\packages\BaiduMap.dll</HintPath>
+    </Reference>
+    <Reference Include="WebSocket4Net">
+      <HintPath>..\packages\WebSocket4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.22.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapter\PingguTabsPagerAdapter.cs" />
+    <Compile Include="Adapter\VehiclePictureAdapter.cs" />
+    <Compile Include="Adapter\ViewPagerAdapter.cs" />
+    <Compile Include="CustomView\CImageMarkView.cs" />
+    <Compile Include="Entity\CustomDataPackage.cs" />
+    <Compile Include="Entity\PostionPoint.cs" />
+    <Compile Include="Entity\QichePingguTabItem.cs" />
+    <Compile Include="Entity\VehiclePictureItem.cs" />
+    <Compile Include="Fragments\CheLiangXinxiFragment.cs" />
+    <Compile Include="Fragments\PingguXinxiFragment.cs" />
+    <Compile Include="Fragments\WaiguanFragment.cs" />
+    <Compile Include="Fragments\XianChangGuJiaFragment.cs" />
+    <Compile Include="HomeActivity.cs" />
+    <Compile Include="LoginActivity.cs" />
+    <Compile Include="LunchActivity.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="MapActivity.cs" />
+    <Compile Include="MessageActivity.cs" />
+    <Compile Include="QichePingguActivity.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingActivity.cs" />
+    <Compile Include="Untity\BitmapUtil.cs" />
+    <Compile Include="Untity\DateTimePickDialogUtil.cs" />
+    <Compile Include="Untity\PropertiesUtil.cs" />
+    <Compile Include="Untity\QuickLZ.cs" />
+    <Compile Include="Untity\WebSocketProxy.cs" />
+    <Compile Include="VehiclePictureActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\property.properties" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\CheliangXinxiFragment.axml" />
+    <AndroidResource Include="Resources\layout\CommonDateTime.axml" />
+    <AndroidResource Include="Resources\layout\HeadImage.axml" />
+    <AndroidResource Include="Resources\layout\Home.axml" />
+    <AndroidResource Include="Resources\layout\Login.axml" />
+    <AndroidResource Include="Resources\layout\Lunch.axml" />
+    <AndroidResource Include="Resources\layout\MainTabs.axml" />
+    <AndroidResource Include="Resources\layout\MapHome.axml" />
+    <AndroidResource Include="Resources\layout\MessageHome.axml" />
+    <AndroidResource Include="Resources\layout\PingguXinxiFragment.axml" />
+    <AndroidResource Include="Resources\layout\QichePinggu.axml" />
+    <AndroidResource Include="Resources\layout\QichePingguTabs.axml" />
+    <AndroidResource Include="Resources\layout\SettingHome.axml" />
+    <AndroidResource Include="Resources\layout\VehiclePicture.axml" />
+    <AndroidResource Include="Resources\layout\VehiclePictureItem.axml" />
+    <AndroidResource Include="Resources\layout\WaiguanFragment.axml" />
+    <AndroidResource Include="Resources\layout\XianChangGuJiaFragment.axml" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ad_selectable_background.xml" />
+    <AndroidResource Include="Resources\drawable\ad_selected_background.xml" />
+    <AndroidResource Include="Resources\drawable\back.png" />
+    <AndroidResource Include="Resources\drawable\bg_record_number.png" />
+    <AndroidResource Include="Resources\drawable\boder1.xml" />
+    <AndroidResource Include="Resources\drawable\btn_gongju.9.png" />
+    <AndroidResource Include="Resources\drawable\btn_gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable\btn_gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable\btn_gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable\btn_shou_ye.9.png" />
+    <AndroidResource Include="Resources\drawable\btn_shou_ye1.9.png" />
+    <AndroidResource Include="Resources\drawable\btn_shou_yestyte.xml" />
+    <AndroidResource Include="Resources\drawable\btn_xiaoxi.9.png" />
+    <AndroidResource Include="Resources\drawable\btn_xiaoxi1.9.png" />
+    <AndroidResource Include="Resources\drawable\btn_xiaoxi2.9.png" />
+    <AndroidResource Include="Resources\drawable\btn_yi_jian_xia_dan.9.png" />
+    <AndroidResource Include="Resources\drawable\btn_yi_jian_xia_dan1.9.png" />
+    <AndroidResource Include="Resources\drawable\btn_yi_jian_xia_danstyte.xml" />
+    <AndroidResource Include="Resources\drawable\btn2.9.png" />
+    <AndroidResource Include="Resources\drawable\btn2_1.png" />
+    <AndroidResource Include="Resources\drawable\btn2colorstyte.xml" />
+    <AndroidResource Include="Resources\drawable\btn2colorstyte_s.xml" />
+    <AndroidResource Include="Resources\drawable\btn2styte.xml" />
+    <AndroidResource Include="Resources\drawable\btn3.9.png" />
+    <AndroidResource Include="Resources\drawable\btn3styte.xml" />
+    <AndroidResource Include="Resources\drawable\btnchaxun.xml" />
+    <AndroidResource Include="Resources\drawable\btnchaxun_s.xml" />
+    <AndroidResource Include="Resources\drawable\btnclickstyte.xml" />
+    <AndroidResource Include="Resources\drawable\btndingdan.xml" />
+    <AndroidResource Include="Resources\drawable\btndingdan_s.xml" />
+    <AndroidResource Include="Resources\drawable\btngongju.xml" />
+    <AndroidResource Include="Resources\drawable\btngongju_s.xml" />
+    <AndroidResource Include="Resources\drawable\btnjilu.xml" />
+    <AndroidResource Include="Resources\drawable\btnjilu_s.xml" />
+    <AndroidResource Include="Resources\drawable\btnshezhi.xml" />
+    <AndroidResource Include="Resources\drawable\btnshezhi_s.xml" />
+    <AndroidResource Include="Resources\drawable\btnxiadan_style.xml" />
+    <AndroidResource Include="Resources\drawable\btnxiadan_style_s.xml" />
+    <AndroidResource Include="Resources\drawable\camera_shot_normal.png" />
+    <AndroidResource Include="Resources\drawable\car.png" />
+    <AndroidResource Include="Resources\drawable\chaxun.9.png" />
+    <AndroidResource Include="Resources\drawable\chaxun_child.png" />
+    <AndroidResource Include="Resources\drawable\chaxun_group.png" />
+    <AndroidResource Include="Resources\drawable\chaxun_group1.png" />
+    <AndroidResource Include="Resources\drawable\chaxun_s.9.png" />
+    <AndroidResource Include="Resources\drawable\chaxun_s1.9.png" />
+    <AndroidResource Include="Resources\drawable\chaxun1.9.png" />
+    <AndroidResource Include="Resources\drawable\chaxunjilu_s.9.png" />
+    <AndroidResource Include="Resources\drawable\chaxunjilu_s1.9.png" />
+    <AndroidResource Include="Resources\drawable\checkbox.png" />
+    <AndroidResource Include="Resources\drawable\checkbox1.png" />
+    <AndroidResource Include="Resources\drawable\checkboxstyte.xml" />
+    <AndroidResource Include="Resources\drawable\checkstl.xml" />
+    <AndroidResource Include="Resources\drawable\child_item.png" />
+    <AndroidResource Include="Resources\drawable\compose_tag_dot.png" />
+    <AndroidResource Include="Resources\drawable\dingdan.9.png" />
+    <AndroidResource Include="Resources\drawable\dingdan1.9.png" />
+    <AndroidResource Include="Resources\drawable\edit_input.xml" />
+    <AndroidResource Include="Resources\drawable\ems_tiitlebut.png" />
+    <AndroidResource Include="Resources\drawable\ems_tiitlebut1.png" />
+    <AndroidResource Include="Resources\drawable\gongju.9.png" />
+    <AndroidResource Include="Resources\drawable\gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable\gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable\gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable\grop_item.png" />
+    <AndroidResource Include="Resources\drawable\grop_item1.png" />
+    <AndroidResource Include="Resources\drawable\grop_item2.png" />
+    <AndroidResource Include="Resources\drawable\group_bg.png" />
+    <AndroidResource Include="Resources\drawable\group_bg1.png" />
+    <AndroidResource Include="Resources\drawable\group_bg2.png" />
+    <AndroidResource Include="Resources\drawable\group_bg3.png" />
+    <AndroidResource Include="Resources\drawable\jiantoudizhi.png" />
+    <AndroidResource Include="Resources\drawable\jilu.9.png" />
+    <AndroidResource Include="Resources\drawable\jilu1.9.png" />
+    <AndroidResource Include="Resources\drawable\logo_huanyu.png" />
+    <AndroidResource Include="Resources\drawable\logo1.png" />
+    <AndroidResource Include="Resources\drawable\mark1.png" />
+    <AndroidResource Include="Resources\drawable\my_spinnerk_stytle.xml" />
+    <AndroidResource Include="Resources\drawable\name.png" />
+    <AndroidResource Include="Resources\drawable\password.png" />
+    <AndroidResource Include="Resources\drawable\pingguoxixin_item_selector.xml" />
+    <AndroidResource Include="Resources\drawable\radiobutton.xml" />
+    <AndroidResource Include="Resources\drawable\right_jiantou.png" />
+    <AndroidResource Include="Resources\drawable\shanchu.png" />
+    <AndroidResource Include="Resources\drawable\shezhi.9.png" />
+    <AndroidResource Include="Resources\drawable\shezhi1.9.png" />
+    <AndroidResource Include="Resources\drawable\slipbtn.png" />
+    <AndroidResource Include="Resources\drawable\slipbtn1.png" />
+    <AndroidResource Include="Resources\drawable\slipbtn2.png" />
+    <AndroidResource Include="Resources\drawable\slipbtnx.xml" />
+    <AndroidResource Include="Resources\drawable\sms.9.png" />
+    <AndroidResource Include="Resources\drawable\spinnerradiobutton.xml" />
+    <AndroidResource Include="Resources\drawable\tabbut1tytle.xml" />
+    <AndroidResource Include="Resources\drawable\tabbut2tytle.xml" />
+    <AndroidResource Include="Resources\drawable\tabbut3tytle.xml" />
+    <AndroidResource Include="Resources\drawable\tabbut4tytle.xml" />
+    <AndroidResource Include="Resources\drawable\tianjia.png" />
+    <AndroidResource Include="Resources\drawable\top.png" />
+    <AndroidResource Include="Resources\drawable\top1.9.png" />
+    <AndroidResource Include="Resources\drawable\toptitle.png" />
+    <AndroidResource Include="Resources\drawable\wb_more_setting_setting_normal.png" />
+    <AndroidResource Include="Resources\drawable\wb_more_setting_setting_pressed.png" />
+    <AndroidResource Include="Resources\drawable\wecome_bg.png" />
+    <AndroidResource Include="Resources\drawable\welcome.png" />
+    <AndroidResource Include="Resources\drawable\wodedingdan_s.9.png" />
+    <AndroidResource Include="Resources\drawable\wodedingdan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable\xiadan.9.png" />
+    <AndroidResource Include="Resources\drawable\xiadan_s.9.png" />
+    <AndroidResource Include="Resources\drawable\xiadan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable\xiadan1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\a.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\b.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_shou_ye.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_shou_ye1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_xiaoxi.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_xiaoxi1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_xiaoxi2.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_yi_jian_xia_dan.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_yi_jian_xia_dan1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btnchaxun.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\btnchaxun_s.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\btndingdan.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\btndingdan_s.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\btngongju.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\btngongju_s.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\btnjilu.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\btnjilu_s.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\btnshezhi.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\btnshezhi_s.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\btnxiadan_style.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\btnxiadan_style_s.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\c.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\chaxun.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\chaxun_s.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\chaxun_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\chaxun1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\chaxunjilu_s.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\chaxunjilu_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\dingdan.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\dingdan1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\indicator.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\indicator_focused.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\jilu.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\jilu1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\logo_huanyu.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shezhi.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shezhi1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\slipbtn.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\slipbtn1.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\slipbtn2.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\top1.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\wodedingdan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\wodedingdan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\xiadan.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\xiadan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\xiadan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\xiadan1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\btn_gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\btn_gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\btn_gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\btn_gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\btn_shou_ye.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\btn_shou_ye1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\btn_xiaoxi.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\btn_xiaoxi1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\btn_xiaoxi2.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\btn_yi_jian_xia_dan.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\btn_yi_jian_xia_dan1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\chaxun.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\chaxun_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\chaxun_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\chaxun1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\chaxunjilu_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\chaxunjilu_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\dingdan.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\dingdan1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\jilu.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\jilu1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\shezhi.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\shezhi1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\wodedingdan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\wodedingdan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\xiadan.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\xiadan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\xiadan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-hdpi\xiadan1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\btn_gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\btn_gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\btn_gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\btn_gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\btn_shou_ye.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\btn_shou_ye1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\btn_xiaoxi.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\btn_xiaoxi1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\btn_xiaoxi2.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\btn_yi_jian_xia_dan.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\btn_yi_jian_xia_dan1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\chaxun.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\chaxun_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\chaxun_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\chaxun1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\chaxunjilu_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\chaxunjilu_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\dingdan.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\dingdan1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\jilu.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\jilu1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\shezhi.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\shezhi1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\wodedingdan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\wodedingdan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\xiadan.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\xiadan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\xiadan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-mdpi\xiadan1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\btn_gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\btn_gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\btn_gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\btn_gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\btn_shou_ye.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\btn_shou_ye1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\btn_xiaoxi.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\btn_xiaoxi1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\btn_xiaoxi2.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\btn_yi_jian_xia_dan.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\btn_yi_jian_xia_dan1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\chaxun.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\chaxun_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\chaxun_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\chaxun1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\chaxunjilu_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\chaxunjilu_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\dingdan.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\dingdan1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\jilu.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\jilu1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\shezhi.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\shezhi1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\wodedingdan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\wodedingdan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\xiadan.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\xiadan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\xiadan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xhdpi\xiadan1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\btn_gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\btn_gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\btn_gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\btn_gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\btn_shou_ye.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\btn_shou_ye1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\btn_xiaoxi.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\btn_xiaoxi1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\btn_xiaoxi2.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\btn_yi_jian_xia_dan.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\btn_yi_jian_xia_dan1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\chaxun.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\chaxun_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\chaxun_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\chaxun1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\chaxunjilu_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\chaxunjilu_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\dingdan.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\dingdan1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\jilu.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\jilu1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\shezhi.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\shezhi1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\wodedingdan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\wodedingdan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\xiadan.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\xiadan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\xiadan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-large-xxhdpi\xiadan1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\btn_gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\btn_gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\btn_gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\btn_gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\btn_shou_ye.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\btn_shou_ye1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\btn_xiaoxi.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\btn_xiaoxi1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\btn_xiaoxi2.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\btn_yi_jian_xia_dan.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\btn_yi_jian_xia_dan1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\btnchaxun.xml" />
+    <AndroidResource Include="Resources\drawable-ldpi\btnchaxun_s.xml" />
+    <AndroidResource Include="Resources\drawable-ldpi\btndingdan.xml" />
+    <AndroidResource Include="Resources\drawable-ldpi\btndingdan_s.xml" />
+    <AndroidResource Include="Resources\drawable-ldpi\btngongju.xml" />
+    <AndroidResource Include="Resources\drawable-ldpi\btngongju_s.xml" />
+    <AndroidResource Include="Resources\drawable-ldpi\btnjilu.xml" />
+    <AndroidResource Include="Resources\drawable-ldpi\btnjilu_s.xml" />
+    <AndroidResource Include="Resources\drawable-ldpi\btnshezhi.xml" />
+    <AndroidResource Include="Resources\drawable-ldpi\btnshezhi_s.xml" />
+    <AndroidResource Include="Resources\drawable-ldpi\btnxiadan_style.xml" />
+    <AndroidResource Include="Resources\drawable-ldpi\btnxiadan_style_s.xml" />
+    <AndroidResource Include="Resources\drawable-ldpi\chaxun.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\chaxun_s.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\chaxun_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\chaxun1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\chaxunjilu_s.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\chaxunjilu_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\dingdan.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\dingdan1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\jilu.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\jilu1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\logo_huanyu.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\shezhi.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\shezhi1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\slipbtn.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\slipbtn1.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\slipbtn2.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\top1.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\wodedingdan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\wodedingdan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\xiadan.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\xiadan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\xiadan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\xiadan1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_shou_ye.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_shou_ye1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_xiaoxi.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_xiaoxi1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_xiaoxi2.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_yi_jian_xia_dan.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_yi_jian_xia_dan1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btnchaxun_s.xml" />
+    <AndroidResource Include="Resources\drawable-mdpi\btndingdan_s.xml" />
+    <AndroidResource Include="Resources\drawable-mdpi\btngongju_s.xml" />
+    <AndroidResource Include="Resources\drawable-mdpi\btnjilu_s.xml" />
+    <AndroidResource Include="Resources\drawable-mdpi\btnshezhi_s.xml" />
+    <AndroidResource Include="Resources\drawable-mdpi\btnxiadan_style_s.xml" />
+    <AndroidResource Include="Resources\drawable-mdpi\chaxun.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\chaxun_s.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\chaxun_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\chaxun1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\chaxunjilu_s.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\chaxunjilu_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\dingdan.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\dingdan1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\jilu.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\jilu1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\logo_huanyu.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\shezhi.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\shezhi1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\slipbtn.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\slipbtn1.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\slipbtn2.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\top1.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\wodedingdan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\wodedingdan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\xiadan.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\xiadan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\xiadan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\xiadan1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_shou_ye.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_shou_ye1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_xiaoxi.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_xiaoxi1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_xiaoxi2.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_yi_jian_xia_dan.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_yi_jian_xia_dan1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btnchaxun.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btnchaxun_s.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btndingdan.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btndingdan_s.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btngongju.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btngongju_s.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btnjilu.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btnjilu_s.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btnshezhi.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btnshezhi_s.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btnxiadan_style.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btnxiadan_style_s.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\chaxun.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\chaxun_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\chaxun_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\chaxun1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\chaxunjilu_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\chaxunjilu_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\dingdan.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\dingdan1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\jilu.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\jilu1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\logo_huanyu.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shezhi.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shezhi1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\slipbtn.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\slipbtn1.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\slipbtn2.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\top1.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\wodedingdan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\wodedingdan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\xiadan.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\xiadan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\xiadan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\xiadan1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\btn_gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\btn_gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\btn_gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\btn_gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\btn_shou_ye.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\btn_shou_ye1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\btn_xiaoxi.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\btn_xiaoxi1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\btn_xiaoxi2.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\btn_yi_jian_xia_dan.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\btn_yi_jian_xia_dan1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\chaxun.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\chaxun_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\chaxun_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\chaxun1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\chaxunjilu_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\chaxunjilu_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\dingdan.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\dingdan1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\jilu.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\jilu1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\shezhi.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\shezhi1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\wodedingdan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\wodedingdan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\xiadan.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\xiadan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\xiadan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xlarge-xhdpi\xiadan1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_shou_ye.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_shou_ye1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_xiaoxi.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_xiaoxi1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_xiaoxi2.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_yi_jian_xia_dan.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_yi_jian_xia_dan1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btnchaxun.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btnchaxun_s.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btndingdan.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btndingdan_s.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btngongju.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btngongju_s.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btnjilu.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btnjilu_s.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btnshezhi.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btnshezhi_s.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btnxiadan_style.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btnxiadan_style_s.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\chaxun.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\chaxun_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\chaxun_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\chaxun1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\chaxunjilu_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\chaxunjilu_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\dingdan.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\dingdan1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\gongju.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\gongju_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\gongju_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\gongju1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\jilu.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\jilu1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\shezhi.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\shezhi1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\top1.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\wodedingdan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\wodedingdan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\xiadan.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\xiadan_s.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\xiadan_s1.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\xiadan1.9.png" />
+    <AndroidResource Include="Resources\values\arrays.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values\drawables.xml" />
+    <AndroidResource Include="Resources\values\ids.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values-1024x600\dimens.xml" />
+    <AndroidResource Include="Resources\values-1280x720\dimens.xml" />
+    <AndroidResource Include="Resources\values-1280x768\dimens.xml" />
+    <AndroidResource Include="Resources\values-1280x800\dimens.xml" />
+    <AndroidResource Include="Resources\values-1800x1080\dimens.xml" />
+    <AndroidResource Include="Resources\values-1920x1080\dimens.xml" />
+    <AndroidResource Include="Resources\values-1920x1200\dimens.xml" />
+    <AndroidResource Include="Resources\values-2560x1600\dimens.xml" />
+    <AndroidResource Include="Resources\values-320x240\dimens.xml" />
+    <AndroidResource Include="Resources\values-400x240\dimens.xml" />
+    <AndroidResource Include="Resources\values-432x240\dimens.xml" />
+    <AndroidResource Include="Resources\values-480x320\dimens.xml" />
+    <AndroidResource Include="Resources\values-800x480\dimens.xml" />
+    <AndroidResource Include="Resources\values-854x480\dimens.xml" />
+    <AndroidResource Include="Resources\values-hdpi-1280x720\dimens.xml" />
+    <AndroidResource Include="Resources\values-hdpi-800x480\dimens.xml" />
+    <AndroidResource Include="Resources\values-hdpi-854x480\dimens.xml" />
+    <AndroidResource Include="Resources\values-large\colors.xml" />
+    <AndroidResource Include="Resources\values-large\dimens.xml" />
+    <AndroidResource Include="Resources\values-large-hdpi\dimens.xml" />
+    <AndroidResource Include="Resources\values-large-mdpi\dimens.xml" />
+    <AndroidResource Include="Resources\values-large-tvdpi\dimens.xml" />
+    <AndroidResource Include="Resources\values-large-xhdpi\dimens.xml" />
+    <AndroidResource Include="Resources\values-large-xxhdpi\dimens.xml" />
+    <AndroidResource Include="Resources\values-mdpi-800x480\dimens.xml" />
+    <AndroidResource Include="Resources\values-mdpi-854x480\dimens.xml" />
+    <AndroidResource Include="Resources\values-normal-hdpi\dimens.xml" />
+    <AndroidResource Include="Resources\values-normal-mdpi\dimens.xml" />
+    <AndroidResource Include="Resources\values-normal-xhdpi\dimens.xml" />
+    <AndroidResource Include="Resources\values-xhdpi-1280x720\dimens.xml" />
+    <AndroidResource Include="Resources\values-xhdpi-1920x1080\dimens.xml" />
+    <AndroidResource Include="Resources\values-xlarge\colors.xml" />
+    <AndroidResource Include="Resources\values-xlarge\dimens.xml" />
+    <AndroidResource Include="Resources\values-xlarge-mdpi\dimens.xml" />
+    <AndroidResource Include="Resources\values-xlarge-xhdpi\dimens.xml" />
+    <AndroidResource Include="Resources\values-xxhdpi-1920x1080\dimens.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <ProjectReference Include="..\fastBinaryJSON\fastBinaryJSON.csproj">
+      <Project>{87F82C6C-37AD-4478-90A9-F72A64EFCD7D}</Project>
+      <Name>fastBinaryJSON</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+</Project>

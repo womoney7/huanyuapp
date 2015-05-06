@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gereziliao_text_h">80.0dip</dimen>
+    <dimen name="gereziliao_text_size">22.0dip</dimen>
+    <dimen name="setting_h">80.0dip</dimen>
+    <dimen name="myems_text_size">27.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">3.0dip</dimen>
+    <dimen name="one_key_order_lin_h">85.0dip</dimen>
+    <dimen name="one_key_order_lin_text_w">100.0dip</dimen>
+    <dimen name="one_key_order_lin_text_w2">260.0dip</dimen>
+    <dimen name="one_key_order_lin_margin_t">1.0dip</dimen>
+    <dimen name="one_key_order_lin_margin_t2">5.0dip</dimen>
+    <dimen name="one_key_order_btn_margin_b">20.0dip</dimen>
+    <dimen name="one_key_order_text_margin_l">20.0dip</dimen>
+    <dimen name="one_key_order_text_margin_l2">5.0dip</dimen>
+    <dimen name="one_key_order_text_size">26.0dip</dimen>
+    <dimen name="one_key_order_top_text_size">18.0dip</dimen>
+    <dimen name="one_key_order_btn_h">65.0dip</dimen>
+    <dimen name="one_key_order_btn_lr">15.0dip</dimen>
+    <dimen name="zhuye2_btn_h">435.0dip</dimen>
+    <dimen name="zhuye_btn_h">145.0dip</dimen>
+    <dimen name="bottom_tab_h">106.0dip</dimen>
+    <dimen name="bottom_tab_font_size">18.0dip</dimen>
+    <dimen name="bottom_tab_padding_bottom">4.0dip</dimen>
+</resources>
