@@ -31,7 +31,7 @@ namespace App
             txtPassword = this.FindViewById<EditText>(Resource.Id.password);
             txtLoginName.Text = "android";
             txtPassword.Text = "123456";
-            btLogin.Click += btLogin_Click;
+            btLogin.Click += btLogin_Click; 
         }
 
         void btLogin_Click(object sender, EventArgs e)

@@ -253,6 +253,7 @@ namespace App.Untity
             AddTask(task);
         }
 
+        
 
         public void InvokeWithPackage(string cmd, byte[] data, OnCompletion<object> result, Action networkerrAction = null)
         {
@@ -302,6 +303,7 @@ namespace App.Untity
         {
             this.IsBusy = false;
             LastTime = DateTime.Now;
+            
             ThreadPool.QueueUserWorkItem((s) =>
             {
 

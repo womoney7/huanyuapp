@@ -16,7 +16,15 @@
         android:layout_height="50dip"
         android:background="#F08400"
         android:layout_marginBottom="2dip">
-        <TextView
+        <App.CustomView.AutoTextView
+            android:text="@string/messagetext"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/tvMessage"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/connect_info_camera_text_size"
+            android:textColor="@color/result_text" />
+    <!--<TextView
             android:text="@string/messagetext"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
@@ -33,7 +41,7 @@
             android:id="@+id/textView2"
             android:textColor="@color/result_text"
             android:textSize="@dimen/connect_info_camera_text_size"
-            android:layout_weight="3" />
+            android:layout_weight="3" />-->
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"

@@ -28,6 +28,8 @@ namespace App
         private Timer timer;
         private LayoutInflater layoutInflater;
         private int window_width;
+        private App.CustomView.AutoTextView autoTextView;
+        private Timer autoTextTimer;
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -36,8 +38,9 @@ namespace App
             window_width = dm.WidthPixels;
             frameheight = (int)this.Resources.GetDimension(Resource.Dimension.headimage_frameheight);
             this.SetContentView(Resource.Layout.Home);
-            InitHeadImage();
 
+            #region 图片初始化
+            InitHeadImage();
             timer = new Timer(5000);
             timer.Elapsed += (sender, args) =>
             {
@@ -53,7 +56,32 @@ namespace App
             };
             timer.Enabled = true;
 
+            #endregion
+            autoTextView = this.FindViewById<App.CustomView.AutoTextView>(Resource.Id.tvMessage);
+            List<string> mesList = new List<string>() { "新消息111", "新消息2222", "新消息33333", "新消息4444" };
+            autoTextView.SetText(mesList[0]);
+            autoTextTimer = new Timer(5000);
+            int texIndex = 1;
+            timer.Elapsed += (s, e) =>
+            {
+                this.RunOnUiThread(() =>
+                {
+                    if (texIndex >= mesList.Count)
+                    {
+                        texIndex = 0;
+                    }
 
+                    autoTextView.Previous();
+                    autoTextView.SetText(mesList[texIndex]);
+                    texIndex++;
+                });
+
+
+            };
+            autoTextTimer.Enabled = true;
+            #region 消息滚动
+
+            #endregion
             var btnPinggu = this.FindViewById<Button>(Resource.Id.cheliangpinggu);
             btnPinggu.Click += (s, e) =>
             {

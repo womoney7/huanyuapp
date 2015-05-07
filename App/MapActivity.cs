@@ -42,14 +42,13 @@ namespace App
             option.OpenGps = true;
             option.CoorType = "bd09ll";
             option.ScanSpan = 1000;
-            
             option.SetIsNeedAddress(true);
             option.SetNeedDeviceDirect(true);
             option.SetLocationMode(LocationClientOption.LocationMode.HightAccuracy);
             locaClient.LocOption = option;
             locaClient.Start();
 
-
+            
         }
 
         protected override void OnDestroy()

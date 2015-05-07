@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -56,8 +56,9 @@
     <Reference Include="BaiduMap">
       <HintPath>..\packages\BaiduMap.dll</HintPath>
     </Reference>
-    <Reference Include="WebSocket4Net">
-      <HintPath>..\packages\WebSocket4Net.dll</HintPath>
+    <Reference Include="WebSocket4Net, Version=0.12.0.0, Culture=neutral, PublicKeyToken=eb4e154b696bf72a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WebSocket4Net.0.12\lib\monoandroid22\WebSocket4Net.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v4">
       <HintPath>..\packages\Xamarin.Android.Support.v4.22.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
@@ -67,6 +68,7 @@
     <Compile Include="Adapter\PingguTabsPagerAdapter.cs" />
     <Compile Include="Adapter\VehiclePictureAdapter.cs" />
     <Compile Include="Adapter\ViewPagerAdapter.cs" />
+    <Compile Include="CustomView\AutoTextView.cs" />
     <Compile Include="CustomView\CImageMarkView.cs" />
     <Compile Include="Entity\CustomDataPackage.cs" />
     <Compile Include="Entity\PostionPoint.cs" />
